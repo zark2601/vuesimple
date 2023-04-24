@@ -4,6 +4,7 @@ import CountComp from '../views/CountComp.vue'
 import Reactivity from '../views/Reactivity.vue'
 import ComputedComp from '../views/ComputedComp.vue'
 import ClassStyle from '../views/ClassStyle.vue'
+import Conditional from '../views/Conditional.vue'
 
 const routes = [
   {
@@ -39,6 +40,11 @@ const routes = [
     path : '/classStyle',
     name : 'classStyle',
     component: ClassStyle
+  },
+  {
+    path : '/conditonal',
+    name : 'conditonal',
+    component: Conditional
   }
 ]
 
