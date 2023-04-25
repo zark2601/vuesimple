@@ -6,6 +6,7 @@
     <router-link to="/reactive">Reactive</router-link> |
     <router-link to="/computed">Computed</router-link>  |
     <router-link to="/classStyle">Class Style</router-link> |
+    <router-link to="/conditonal">Conditional Style</router-link> |
   </nav>
   <router-view/>
 </template>
