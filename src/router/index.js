@@ -5,6 +5,12 @@ import Reactivity from '../views/Reactivity.vue'
 import ComputedComp from '../views/ComputedComp.vue'
 import ClassStyle from '../views/ClassStyle.vue'
 import Conditional from '../views/Conditional.vue'
+import EventHandling from '../views/EventHandling.vue'
+import FormInputBinding from '../views/FormInputBinding.vue'
+import LifeCycleHooks from '../views/LifeCycleHooks.vue'
+import Watcher from '../views/Watcher.vue'
+import TemplateRefs from '../views/TemplateRefs.vue'
+import ComponentsBasic from '../views/ComponentsBasic.vue'
 
 const routes = [
   {
@@ -45,6 +51,36 @@ const routes = [
     path : '/conditonal',
     name : 'conditonal',
     component: Conditional
+  },
+  {
+    path : '/eventHandling',
+    name : 'eventHandling',
+    component: EventHandling
+  },
+  {
+    path : '/formInputBinding',
+    name : 'formInputBinding',
+    component : FormInputBinding
+  },
+  {
+    path : '/lifeCycleHook',
+    name : 'lifeCycleHook',
+    component : LifeCycleHooks
+  },
+  {
+    path : '/watcher',
+    name : 'watcher',
+    component : Watcher
+  },
+  {
+    path : '/templateRefs',
+    name : 'templateRefs',
+    component : TemplateRefs
+  },
+  {
+    path : '/componentsBasic',
+    name : 'componentsBasic',
+    component : ComponentsBasic
   }
 ]
 

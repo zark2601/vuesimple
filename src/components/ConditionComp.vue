@@ -132,6 +132,24 @@
                 :key="item.id"
             />
         </div>
+        <div class="text-red-500">Using Replacing an Arry <br>
+            this.items = this.items.filter((item) => item.message.match(/Foo/))
+            <ul>
+                <li>push(), pop(), shift(), unshift(), splice(), sort(), reverse()</li>
+            </ul>
+        </div>
+        <br><hr>
+        <div>Displaying Filtered/Sorted Results <br>
+            <ul>
+                <li v-for="n in evenNumbers">{{ n }}</li>
+            </ul>
+        </div>
+        <div>
+            Using multi v-for loop associated array <br>
+            <ul v-for="numbers in sets">
+                <li v-for="n in even(numbers)">{{ n }}</li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -156,11 +174,23 @@
                     author : 'Jane Doe',
                     pusblishedAt : '22/05/02'
                 },
-                todos : [{name : 'lyhong'}, {name : 'nguon'}]
+                todos : [{name : 'lyhong'}, {name : 'nguon'}],
+                numbers : [1, 2, 3, 4, 5],
+                sets: [[ 1, 2, 3, 4, 5 ], [6, 7, 8, 9, 10]],
+            }
+        },
+        methods: {
+            even(numbers) {
+                return numbers.filter(number => number % 2 === 0)
             }
         },
         components : {
-            MyComponent 
+            // MyComponent 
+        },
+        computed : {
+            evenNumbers() {
+                return this.numbers.filter(n => n % 2 === 0)
+            }
         }
     }
 </script>
