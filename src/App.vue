@@ -7,6 +7,12 @@
     <router-link to="/computed">Computed</router-link>  |
     <router-link to="/classStyle">Class Style</router-link> |
     <router-link to="/conditonal">Conditional Style</router-link> |
+    <router-link to="/eventHandling">Event Handling</router-link> |
+    <router-link to="/formInputBinding">Form Input Binding</router-link> |
+    <router-link to="/lifeCycleHook">Life Cycle Hook</router-link> |
+    <router-link to="/watcher">Watcher</router-link> |
+    <router-link to="/templateRefs">Template Refs</router-link> |
+    <router-link to="/componentsBasic">Components Basic</router-link> |
   </nav>
   <router-view/>
 </template>
