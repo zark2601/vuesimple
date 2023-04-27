@@ -13,6 +13,7 @@
     <router-link to="/watcher">Watcher</router-link> |
     <router-link to="/templateRefs">Template Refs</router-link> |
     <router-link to="/componentsBasic">Components Basic</router-link> |
+    <router-link to="/lchook">Hooks simple</router-link> |
   </nav>
   <router-view/>
 </template>

@@ -11,6 +11,7 @@ import LifeCycleHooks from '../views/LifeCycleHooks.vue'
 import Watcher from '../views/Watcher.vue'
 import TemplateRefs from '../views/TemplateRefs.vue'
 import ComponentsBasic from '../views/ComponentsBasic.vue'
+import lchook from '../views/Hooks.vue'
 
 const routes = [
   {
@@ -81,6 +82,11 @@ const routes = [
     path : '/componentsBasic',
     name : 'componentsBasic',
     component : ComponentsBasic
+  },
+  {
+    path : '/lchook',
+    name : 'lchook',
+    component : lchook,
   }
 ]
 
