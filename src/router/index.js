@@ -12,6 +12,7 @@ import Watcher from '../views/Watcher.vue'
 import TemplateRefs from '../views/TemplateRefs.vue'
 import ComponentsBasic from '../views/ComponentsBasic.vue'
 import lchook from '../views/Hooks.vue'
+import axios from '../views/Axios.vue'
 
 const routes = [
   {
@@ -87,6 +88,11 @@ const routes = [
     path : '/lchook',
     name : 'lchook',
     component : lchook,
+  },
+  {
+    path: '/axios',
+    name: 'axios',
+    component: axios
   }
 ]
 
